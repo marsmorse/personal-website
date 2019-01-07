@@ -1,0 +1,27 @@
+.box {
+  width: 400px;
+  color: #262626;
+  background-color: antiquewhite;
+  padding: 5px;
+  display: inline-block;
+  border-radius: 5px;
+  margin-bottom: 5px;
+  overflow: hidden;
+}
+.bleft {
+  float: left;
+}
+.b-right {
+  float: right;
+}
+.container {
+  width: 80%;
+  margin: 0 auto;
+  background-color: grey;
+  text-align: center;
+  padding: 10px;
+}
+.vertical {
+  stroke-width: 4px;
+  color: green;
+}
