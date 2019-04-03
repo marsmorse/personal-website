@@ -1,3 +1,16 @@
+@import url("https://fonts.googleapis.com/css?family=Poppins");
+/*
+
+
+
+*/
+/*
+-------------------------------------------------------------------------------
+
+Max Scope
+
+-------------------------------------------------------------------------------
+*/
 body {
   margin: 0;
   padding: 0;
@@ -5,12 +18,17 @@ body {
   text-align: center;
   height: 100%;
   width: 100%;
+  background-image: url("./Assets/BG1.jpg");
+  background-size: auto;
 }
-html,
-body {
+html {
   height: 100%;
   width: 100%;
   margin: 0;
+}
+span {
+  color: white;
+  font-size: 2em;
 }
 h1 {
   color: white;
@@ -18,30 +36,232 @@ h1 {
 h2 {
   color: white;
 }
-
+h3 {
+  font-family: Helvetica;
+  font-weight: 100;
+  font-style: italic;
+}
 #root {
   height: 100%;
   width: 100%;
   margin: 0;
-  background-color: aquamarine;
+  background-size: salmon;
 }
 #page {
   height: 100%;
   width: 100%;
+  background-size: pink;
   margin: 0 auto;
-  background-color: aquamarine;
 }
-.go {
-  background-image: url("./back.jpg");
-  background-color: rosybrown;
-  height: 500px;
+
+.link {
+  margin-right: 5%;
+  color: white;
+  text-decoration: none;
+  font-weight: 300;
 }
-span {
-  font-size: 1.5em;
-  color: darkgray;
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: "Poppins", sans-serif;
+  color: white;
 }
-.bio {
-  color: #4c4c4c;
+a {
+  text-decoration: none;
+  color: skyblue;
+}
+.content {
+  text-align: left;
+  display: inline-block;
+  width: 80%;
+  margin: 10% 0;
+}
+#navbar {
+  color: white;
+  position: fixed;
+  right: 60px;
+  top: 30px;
+}
+/*
+-------------------------------------------------------------------------------
+
+Landing Page
+
+-------------------------------------------------------------------------------
+*/
+
+.Section {
+  background-color: white;
+  padding: 150px;
+}
+
+p {
+  font-weight: 100;
+}
+
+#introCont {
+  text-align: center;
+  margin-top: 20%;
+}
+#introCont p {
+  color: white;
+  font-size: 1.1em;
+  font-weight: 100;
+  font-style: italic;
+}
+/*
+-------------------------------------------------------------------------------
+
+About
+
+-------------------------------------------------------------------------------
+*/
+
+.circleIcon {
+  margin: 0 35px 23px 0px;
+  float: left;
+}
+
+.cont > p {
+  line-height: 23px;
+  text-indent: 30px;
+  margin: 20px 0 40px 0;
+  font-size: 0.9em;
+}
+
+.singleCol {
+  width: 50%;
+  display: inline-block;
+  padding: 0 30px;
+  box-sizing: border-box;
+}
+.cont {
+  background-color: white;
+  border-radius: 20px;
+  padding: 60px 80px;
+  color: #5a5a5a;
+  display: inline-block;
+  box-shadow: 0 8px 16px 0 rgba(87, 87, 87, 0.2);
+  transition: 0.3s;
+  margin-bottom: 5%;
+}
+.cont:hover {
+  box-shadow: 0 8px 16px 0 rgba(87, 87, 87, 0.2);
+  position: relative;
+  top: -5px;
+}
+
+/*
+-------------------------------------------------------------------------------
+
+Card CSS
+
+-------------------------------------------------------------------------------
+*/
+.Col {
+  width: 50%;
+  display: inline-block;
+  padding: 0 30px;
+  box-sizing: border-box;
+  vertical-align: top;
+}
+.card {
+  background-color: white;
+  border-radius: 10px;
   width: 100%;
-  line-height: 1.75em;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  transition: 0.3s;
+  margin-bottom: 5%;
+}
+.card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+  position: relative;
+  top: -5px;
+}
+h5 {
+  font-weight: 300;
+  float: right;
+  vertical-align: bottom;
+  color: #999999;
+  font-size: 15px;
+  margin: 0;
+  line-height: 30px;
+}
+
+h4 {
+  font-weight: 100;
+  font-size: 1.5em;
+  margin: 0;
+  color: #5a5a5a;
+  float: left;
+}
+.cardBody {
+  background-color: #ffffff;
+  color: rgb(151, 151, 151);
+  overflow: hidden;
+  padding: 10px 20px;
+  border-radius: 0 0 10px 10px;
+}
+.languageIcon {
+  display: inline-block;
+  padding: 5px 20px;
+  border: solid 1px rgb(124, 82, 82);
+  background-color: #5a5a5a;
+  border-radius: 10px;
+  margin-right: 20px;
+  font-size: 0.8em;
+  color: white;
+}
+.cardPhoto {
+  max-width: 100%;
+  border-radius: 10px 10px 0 0;
+  overflow: hidden;
+}
+.cardBody > p {
+  margin-bottom: 30px;
+}
+
+/*
+-------------------------------------------------------------------------------
+
+Fixed Social Media Bar and email 
+
+-------------------------------------------------------------------------------
+*/
+
+.SocialIcon {
+  text-decoration: none;
+  transform: rotate(90deg);
+  opacity: 0.6;
+  margin: 0 5px;
+  vertical-align: middle;
+}
+#gmail {
+  vertical-align: middle;
+  font-size: 12px;
+  color: white;
+  opacity: 0.6;
+}
+
+.contactBox {
+  position: fixed;
+  transform: rotate(-90deg);
+  display: inline-block;
+}
+#right {
+  right: -65px;
+  bottom: 99px;
+}
+#left {
+  left: -65px;
+  bottom: 110px;
+}
+.contactItem {
+  text-decoration: none;
+  opacity: 0.6;
+  display: inline-block;
+  margin: 0 5px;
+  vertical-align: middle;
 }

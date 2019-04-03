@@ -1,14 +1,19 @@
 import React from "react";
 import Home from "./home.js";
 import About from "./about";
-import Timeline from "./timeline";
+import Projects from "./projects";
+import Nav from "./nav";
+import Social from "./socials";
+
 class App extends React.Component {
   render() {
     return (
       <div id="page">
+        <Social />
+        <Nav />
         <Home />
         <About />
-        <Timeline />
+        <Projects />
       </div>
     );
   }

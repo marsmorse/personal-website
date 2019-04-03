@@ -1,67 +1,45 @@
 import React from "react";
-import styled from "styled-components";
 import "./index.css";
+import headshoot from "./Assets/Headshoot.png";
 
-const Content = styled.div`
-  color: #4c4c4c;
-  background-position: fixed;
-  background-size: cover;
-  text-align: left;
-  padding: 10px;
-  display: inline-block;
-  width: 60%;
-`;
-const Bio = styled.div`
-  color: #4c4c4c;e
-`;
-const School = styled.div`
-  display: inline-block;
-  width: 50%;
-`;
 class About extends React.Component {
   render() {
     return (
-      <div>
-        <Content id="about">
-          <h1 style={{ color: "#4c4c4c" }}>About Me</h1>
+      <div className="content">
+        <h1 style={{ color: "white", textAlign: "left" }}>About Me</h1>
+        <div className="cont">
+          <img
+            src={headshoot}
+            alt="insert headshot here"
+            className="circleIcon"
+          />
+          <p>
+            Hello! I'm Marshall a junior pursuing a BS in computer science at
+            the University of California Santa Cruz and this is my website.
+          </p>
+          <p>
+            My coding story starts in high school, when I took my first coding
+            class after enjoying my schools digital design courses. I then
+            graduated in 2014 and decided to study Business Management at
+            Carthage College, a small private school in Kenosha, Wisconsin. I
+            decided on Carthage after being recruited to play Lacrosse there.
+            After two years there I wanted to change my career path to that of
+            an enlightened stem field so I chose to give computer science
+            another shot. So I transferred to Diablo Valley College to
+            eventually transfer to University of California Santa Cruz in the
+            Fall of 2018. Where I intend to Graduate in the Spring of 2020.
+          </p>
 
-          <Bio>
-            <p className="bio">
-              <span>Hello! </span>my name is Marshall Morse and I'm a junior at
-              the University of California Santa Cruz pursuing a B.S. in
-              computer science. During my time at UCSC, I'm looking to focus on
-              machine learning and graphics. Outside of coding I'm passionate
-              about music, the outdoors, lacrosse, and snowboarding.
-            </p>
-          </Bio>
-        </Content>
-        <Content>
-          <h1 style={{ color: "#4c4c4c" }}>Education</h1>
-          <School>
-            <p>
-              <span>University of California Santa Cruz</span> - Santa Cruz,
-              California
-            </p>
-          </School>
-          <School>
-            <p>
-              <span>Diablo Valley College</span> - Pleasant Hill, California
-            </p>
-          </School>
-          <School>
-            <p>
-              <span>Carthage College</span> - Kenosha, Wisconsin
-            </p>
-          </School>
-          <School>
-            <p>
-              <span>Acalanes High School</span> - Lafayette, California
-            </p>
-          </School>
-        </Content>
+          <p>
+            When I'm not coding I'm ususally enjoying the outdoors or relaxing
+            with friends. Some of my passions include music, DJ'ing, the
+            outdoors, lacrosse, racing, and snowboarding. If I weren't pursuing
+            computer science I would probably be doing something in the music
+            field like management or promotion.
+          </p>
+        </div>
       </div>
     );
   }
 }
-
 export default About;
