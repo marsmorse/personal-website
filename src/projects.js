@@ -4,7 +4,9 @@ class Projects extends React.Component {
   render() {
     return (
       <div className="content">
-        <h1 style={{ color: "white", textAlign: "left" }}>Projects</h1>
+        <h1 style={{ color: "white", textAlign: "center", margin: "30 0" }}>
+          Projects
+        </h1>
         <div className="Col">
           <Card
             image="outfitCheck"

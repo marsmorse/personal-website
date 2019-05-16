@@ -10,7 +10,6 @@ class App extends React.Component {
     return (
       <div id="page">
         <Social />
-        <Nav />
         <Home />
         <About />
         <Projects />
